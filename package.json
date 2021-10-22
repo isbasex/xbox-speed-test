@@ -1,0 +1,19 @@
+{
+  "name": "xbox-speed-test",
+  "version": "1.0.0",
+  "description": "xbox speed test",
+  "main": "index.js",
+  "repository": "https://github.com/isbasex/xbox-speed-test.git",
+  "author": "baiyun",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "@baiyun/prettier-config": "^1.0.1",
+    "prettier": "^2.4.1"
+  }
+}
