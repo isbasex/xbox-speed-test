@@ -2,6 +2,14 @@
 
 ## [解决 Xbox 在国内下载速度慢](https://baiyun.me/fix-slow-xbox-download-speed)
 
+## Docker 运行
+ 
+ 运行下面这个命令一键使用 Docker 运行
+
+```shell
+docker run --rm -v `pwd`:/tmp/xbox node sh -c "cd /tmp/xbox && node index.js"
+```
+
 ## 使用方法
 
 安装
