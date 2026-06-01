@@ -16,6 +16,24 @@ git clone https://github.com/isbasex/xbox-speed-test.git
 node index.js
 ```
 
+### 可选环境变量
+
+| 变量 | 说明 | 默认值 |
+|------|------|--------|
+| `isCN` | 设置后测试国内节点（`cdn-cn.list`），否则测试国际节点（`cdn.list`） | 未设置 |
+| `CONCURRENCY` | 并发测试的节点数。**默认 1（串行）以保证测速准确**；调高可加速，但各节点会争抢带宽导致结果偏低 | `1` |
+| `TIMEOUT` | 单个节点的测速超时（秒） | `8` |
+
+示例：
+
+```shell
+# 测试国内节点
+isCN=1 node index.js
+
+# 4 并发快速测试（精度略降）
+CONCURRENCY=4 node index.js
+```
+
 ![测试中](https://i.isbase.me/resource/uPic/20211023022010-A0LGxu.jpg)
 
 测试结束后会输出各节点的速度排序表：
